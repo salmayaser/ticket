@@ -1,0 +1,60 @@
+.container{
+  background-color:#ffffff ;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .ticket {
+        position: relative;
+        width: 520px;
+        min-height: 200px;
+        -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 1px 2px);
+         background: #ffffff;
+
+         &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -10px;
+          width: 100%;
+          height: 10px;
+          background:
+            linear-gradient(
+              45deg, transparent 33.333%,
+              #ffffff 33.333%, #ffffff 66.667%,
+              transparent 66.667%
+            ),
+            linear-gradient(
+              -45deg, transparent 33.333%,
+              #ffffff 33.333%, #ffffff 66.667%,
+              transparent 66.667%
+            );
+          background-size: 20px 40px;
+        }
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -10px;
+          width: 100%;
+          height: 10px;
+      transform : rotate(180deg);
+          background:
+            linear-gradient(
+              45deg, transparent 33.333%,
+              #ffffff 33.333%, #ffffff 66.667%,
+              transparent 66.667%
+            ),
+            linear-gradient(
+              -45deg, transparent 33.333%,
+              #ffffff 33.333%, #ffffff 66.667%,
+              transparent 66.667%
+            );
+          background-size: 20px 40px;
+        }
+
+      }
+
