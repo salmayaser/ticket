@@ -9,6 +9,7 @@
 .container{
   background-color:#ffffff ;
   min-height: 100vh;
+  padding: 20px;
 
 
 @include flexCenter()
@@ -27,7 +28,7 @@
           position: absolute;
           top: -10px;
           width: 100%;
-          height: 10px;
+          height: 20px;
           background:
             linear-gradient(
               45deg, transparent 33.333%,
@@ -48,7 +49,7 @@
           position: absolute;
           bottom: -10px;
           width: 100%;
-          height: 10px;
+          height: 20px;
       transform : rotate(180deg);
           background:
             linear-gradient(
